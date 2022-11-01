@@ -1,0 +1,6 @@
+select id, name, phone from Account
+select id, Name, Project_Name__c, status__c from Salesforce_Project__c
+select id, name, mailingCity from contact where name like '%a%'
+select id, name, Active__c, AccountNumber,createddate from account order by createddate desc limit 3
+select id, name, phone, Active__c, AccountNumber, industry,createddate from account where phone != null and active__c = 'Yes'
+select id, name, Subject__c, Status__c, Priority__c,Salesforce_Project__c, Salesforce_Project__r.Name, Salesforce_Project__r.status__c, Salesforce_Project__r.project_name__c from Salesforce_Ticket__c
