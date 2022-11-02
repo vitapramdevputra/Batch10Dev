@@ -1,5 +1,5 @@
 //updating description of all accounts via batch class.
-//getting statistics using stateful. Made some changes again.
+//getting statistics using stateful. 
 public class AccountsBatch implements Database.Batchable<sObject>, Database.stateful{
    integer count = 0;
     //1. start method. where we do soql to fetch all accounts.
@@ -20,7 +20,7 @@ public class AccountsBatch implements Database.Batchable<sObject>, Database.stat
         system.debug('count is ' + count);
         update scope;
     }
-    //finish method to print number of times execute RAN.
+    //finish method to print number of times execute method executed.
     public void finish(Database.BatchableContext bc){
         system.debug('batch execution finished. Done. Simple? right?');
         system.debug('total number of count is ' + count);
