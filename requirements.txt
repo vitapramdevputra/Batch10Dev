@@ -1,0 +1,15 @@
+TriggerSwith Requirements.
+
+
+- Turn ON and OFF accountTrigger without updating code.
+- Turn ON and OFF contactTrigger without updating code.
+
+
+Solution
+
+Custom settings.
+
+TriggerSwitch
+    Type-> list
+
+field: switch (checkbox)
