@@ -1,5 +1,5 @@
 //updating description of all accounts via batch class.
-//getting statistics using stateful.
+//getting statistics using stateful. Made some changes again.
 public class AccountsBatch implements Database.Batchable<sObject>, Database.stateful{
    integer count = 0;
     //1. start method. where we do soql to fetch all accounts.
